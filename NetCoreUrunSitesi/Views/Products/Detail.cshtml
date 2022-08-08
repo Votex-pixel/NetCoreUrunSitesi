@@ -1,0 +1,19 @@
+﻿@model Product
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<div class="row">
+    <div class="col-sm-5">
+        <img src="/Img/@Model.Image" alt="@Model.Name" title="@Model.Name" class="img-fluid" />
+    </div>
+    <div class="col-sm-7">
+        <h1>@Model.Name</h1>
+        <h4>Fiyat : @Model.Price TL</h4>
+        <h4>Stok : @Model.Stock</h4>
+        <p>
+            @Model.Description
+        </p>
+    </div>
+</div>
